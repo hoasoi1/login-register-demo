@@ -1,69 +1,100 @@
+/* style.css */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .login-container {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  width: 320px;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
 }
 
 .login-form h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
 }
 
 .input-group {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .input-group input {
   width: 100%;
-  padding: 12px 40px 12px 12px;
-  border: 1px solid #ccc;
+  padding: 12px 45px 12px 15px;
   border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 .toggle-password {
   position: absolute;
-  right: 10px;
-  top: 12px;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
   cursor: pointer;
+  user-select: none;
+  font-size: 18px;
 }
 
 .options {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9em;
-  margin-bottom: 15px;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
-button {
+.options a {
+  color: #5a67d8;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+button[type="submit"] {
   width: 100%;
-  padding: 10px;
-  background: #4e54c8;
-  color: white;
+  padding: 12px;
+  background-color: #5a67d8;
   border: none;
   border-radius: 8px;
-  font-size: 1em;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background: #3b41b1;
+button[type="submit"]:hover {
+  background-color: #434190;
 }
 
 .login-form p {
   text-align: center;
-  margin-top: 15px;
-  font-size: 0.9em;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.login-form a {
+  color: #5a67d8;
+  text-decoration: none;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
 }
